@@ -18,6 +18,10 @@ import android.widget.TextView;
 
 import com.appz.abhi.tooltip.R;
 
+/*
+ * Reference : http://shardulprabhu.blogspot.com/2012/08/blog-post_29.html
+ * */
+
 public class ChromeHelpPopup {
 
 
