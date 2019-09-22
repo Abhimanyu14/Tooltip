@@ -37,16 +37,14 @@ public class ChromeHelpPopup {
     private Drawable backgroundDrawable = null;
 
     private Rect anchorViewRect;
-    private int screenWidth, screenHeight;
-    private int tooltipHeight, tooltipWidth;
+    private int screenWidth, screenHeight, tooltipHeight, tooltipWidth, xPos, yPos, requestedX;
     private int standardMargin = 16;
     private int overflow = 0;
     private boolean tooltipOnTop;
-    private int yPos, xPos, requestedX;
 
 
-    private ChromeHelpPopup(Context context, String text, int viewResource) {
-
+    public ChromeHelpPopup(Context context, String text) {
+        int viewResource = R.layout.popup;
         popupWindow = new PopupWindow(context);
 
         windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
@@ -64,16 +62,6 @@ public class ChromeHelpPopup {
         downArrowImageView = tooltipView.findViewById(R.id.arrow_down);
 
         textTextView.setMovementMethod(ScrollingMovementMethod.getInstance());
-        textTextView.setSelected(true);
-    }
-
-    private ChromeHelpPopup(Context context) {
-        this(context, "", R.layout.popup);
-    }
-
-    public ChromeHelpPopup(Context context, String text) {
-        this(context);
-
         textTextView.setText(text);
     }
 
