@@ -2,5 +2,14 @@
 
     <!--App name-->
     <string name="app_name">Tooltip</string>
+    <string name="text_1">Top Left</string>
+    <string name="text_2">Top Right</string>
+    <string name="text_3">This has a standard android tooltip</string>
+    <string name="text_4">Popup tooltip</string>
+    <string name="text_5">Popup tooltip 2</string>
+    <string name="text_6">Left</string>
+    <string name="text_7">Right</string>
+    <string name="text_8">Long text</string>
+    <string name="text_9">My Tooltip</string>
 
 </resources>

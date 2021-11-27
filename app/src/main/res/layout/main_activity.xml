@@ -13,53 +13,34 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/main_activity_app_bar_layout"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/main_activity_toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-                tools:title="Tooltip" />
-
-        </com.google.android.material.appbar.AppBarLayout>
-
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/main_activity_text_view_popup_tooltip_top_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Top Left"
+            android:text="@string/text_1"
             android:textAlignment="center"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/main_activity_app_bar_layout" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/main_activity_text_view_popup_tooltip_top_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Top Right"
+            android:text="@string/text_2"
             android:textAlignment="center"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/main_activity_app_bar_layout" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/main_activity_text_view_standard_android_tooltip"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="This has a standard android tooltip"
+            android:text="@string/text_3"
             android:textAlignment="center"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +52,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Popup tooltip "
+            android:text="@string/text_4"
             android:textAlignment="center"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +64,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Popup tooltip 2"
+            android:text="@string/text_5"
             android:textAlignment="center"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
@@ -96,7 +77,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Left"
+            android:text="@string/text_6"
             android:textAlignment="center"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
@@ -107,7 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Right "
+            android:text="@string/text_7"
             android:textAlignment="center"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +99,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Long text "
+            android:text="@string/text_8"
             android:textAlignment="center"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +111,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="My Tooltip"
+            android:text="@string/text_9"
             android:textAlignment="center"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
